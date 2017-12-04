@@ -1,11 +1,17 @@
 package servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import bean.beanData;
 
 /**
  * Servlet implementation class sEntradaBlood
@@ -27,7 +33,7 @@ public class sEntradaBlood extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		doDo(request, response);
 	}
 
 	/**
@@ -37,5 +43,34 @@ public class sEntradaBlood extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
+	
+	private void doDo(HttpServletRequest request, HttpServletResponse response) {
+		String name = request.getParameter("nom");
+		String code = request.getParameter("code");
+		beanData beanData = new beanData();
+		HttpSession session;
+		
+		beanData.setName(name);
+		beanData.setCode(code);
+		
+		session = request.getSession(true);
+		session.setAttribute("bean.beanData", beanData);
+		
+		
+		try {
+			System.out.println("try");
+			ServletContext context = getServletContext();
+			System.out.println("Final1");
+			RequestDispatcher rd = context.getRequestDispatcher("/jspFinal");
+			System.out.println("Final2");
+			rd.forward(request, response);
+			System.out.println("Final3");
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
 
 }
