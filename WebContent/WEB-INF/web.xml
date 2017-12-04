@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>jspFinal</display-name>
+    <servlet-name>jspFinal</servlet-name>
+    <jsp-file>/WEB-INF/jspFinal.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jspFinal</servlet-name>
+    <url-pattern>/jspFinal</url-pattern>
+  </servlet-mapping>
 </web-app>

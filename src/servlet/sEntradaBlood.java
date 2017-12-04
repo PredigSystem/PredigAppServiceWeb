@@ -16,7 +16,7 @@ import bean.beanData;
 /**
  * Servlet implementation class sEntradaBlood
  */
-@WebServlet("sEntradaBlood")
+@WebServlet("/sEntradaBlood")
 public class sEntradaBlood extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -58,13 +58,9 @@ public class sEntradaBlood extends HttpServlet {
 		
 		
 		try {
-			System.out.println("try");
 			ServletContext context = getServletContext();
-			System.out.println("Final1");
 			RequestDispatcher rd = context.getRequestDispatcher("/jspFinal");
-			System.out.println("Final2");
 			rd.forward(request, response);
-			System.out.println("Final3");
 			
 		}catch (Exception e) {
 			e.printStackTrace();
