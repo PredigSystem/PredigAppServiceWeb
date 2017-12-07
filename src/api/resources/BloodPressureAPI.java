@@ -1,12 +1,13 @@
 package api.resources;
 
+import controllers.BloodPressureController;
+import domain.BloodPressure;
+
 import javax.enterprise.context.RequestScoped;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.List;
 
 @RequestScoped
 @Path("/bloodPressure")
@@ -19,5 +20,15 @@ public class BloodPressureAPI {
         return Response.ok("Blabla").build();
     }
 
+    @GET
+    @Path("/{patient}")
+    public Response getBloodPressureList(@PathParam("patient") String id) {
+        List<BloodPressure> bloodPressureList = BloodPressureController.getBloodPressureByUserId(id);
+
+        if(bloodPressureList.isEmpty())
+            return Response.status(Response.Status.NOT_FOUND).build();
+
+        return Response.ok(bloodPressureList).build();
+    }
 
 }
