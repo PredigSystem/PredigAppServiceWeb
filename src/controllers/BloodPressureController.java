@@ -16,7 +16,7 @@ public final class BloodPressureController {
         List<BloodPressure> bloodPressureList = new ArrayList<>();
 
         try (Connection connection = DBConnection.getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM bloodPressure WHERE userId = " + userId + ";")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM public.bloodpressure WHERE bloodpressure.userid = '" + userId + "';")) {
 
             try (ResultSet resultSet = statement.executeQuery()) {
 
@@ -25,7 +25,7 @@ public final class BloodPressureController {
                             userId,
                             resultSet.getDate("date"),
                             resultSet.getDouble("latitude"),
-                            resultSet.getDouble("longitud"),
+                            resultSet.getDouble("longitude"),
                             resultSet.getDouble("systolic"),
                             resultSet.getDouble("diastolic"),
                             resultSet.getInt("pulse")
@@ -39,5 +39,33 @@ public final class BloodPressureController {
         }
 
         return bloodPressureList;
+    }
+
+    public static BloodPressure getLastBloodPressureByUserId(String userId){
+        BloodPressure bloodPressure = null;
+
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM public.bloodpressure WHERE bloodpressure.userid = '" + userId + "' order by bloodpressure.date desc limit 1;")) {
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                resultSet.next();
+                bloodPressure  = new BloodPressure(
+                        userId,
+                        resultSet.getDate("date"),
+                        resultSet.getDouble("latitude"),
+                        resultSet.getDouble("longitude"),
+                        resultSet.getDouble("systolic"),
+                        resultSet.getDouble("diastolic"),
+                        resultSet.getInt("pulse")
+                );
+
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+            }
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+
+        return bloodPressure;
     }
 }

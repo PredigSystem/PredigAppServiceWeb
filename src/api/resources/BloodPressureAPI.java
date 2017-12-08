@@ -31,4 +31,15 @@ public class BloodPressureAPI {
         return Response.ok(bloodPressureList).build();
     }
 
+    @GET
+    @Path("/{patient}/last")
+    public Response getLastBloodPressure(@PathParam("patient") String id) {
+        BloodPressure bloodPressure = BloodPressureController.getLastBloodPressureByUserId(id);
+
+        if(bloodPressure == null)
+            return Response.status(Response.Status.NOT_FOUND).build();
+
+        return Response.ok(bloodPressure).build();
+    }
+
 }
