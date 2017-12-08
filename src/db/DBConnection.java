@@ -12,10 +12,10 @@ public class DBConnection {
 
     static {
         try {
-            dataSource = (DataSource) new InitialContext().lookup("java:jboss/PostbresXA");
+            dataSource = (DataSource) new InitialContext().lookup("java:jboss/PostgresXA");
         }
         catch (NamingException e) {
-            throw new ExceptionInInitializerError("'java:jboss/PostbresXA' not found!");
+            throw new ExceptionInInitializerError("'java:jboss/PostgresXA' not found!");
         }
     }
 
