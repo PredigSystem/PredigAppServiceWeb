@@ -1,6 +1,7 @@
 package domain;
 
-import java.util.Date;
+import java.sql.Date;
+import java.util.UUID;
 
 public class BloodPressure {
     private String userId;
@@ -13,6 +14,10 @@ public class BloodPressure {
     private Double diastolic;
     private Integer pulse;
 
+    public BloodPressure(){
+
+    }
+
     public BloodPressure(String userId, Date date, Double latitude, Double longitude, Double systolic, Double diastolic, Integer pulse) {
         this.userId = userId;
         this.date = date;
@@ -21,6 +26,11 @@ public class BloodPressure {
         this.systolic = systolic;
         this.diastolic = diastolic;
         this.pulse = pulse;
+    }
+
+    public String generateId(){
+        //random ID Generator
+        return UUID.randomUUID().toString().replace("-", "").toLowerCase();
     }
 
     public String getUserId() {

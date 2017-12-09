@@ -42,4 +42,13 @@ public class BloodPressureAPI {
         return Response.ok(bloodPressure).build();
     }
 
+    @POST
+    public Response create(final BloodPressure bloodPressure) {
+        if (BloodPressureController.create(bloodPressure) == null) {
+            return Response.serverError().status(Response.Status.INTERNAL_SERVER_ERROR).build();
+        } else {
+            return Response.ok(bloodPressure).build();
+        }
+    }
+
 }

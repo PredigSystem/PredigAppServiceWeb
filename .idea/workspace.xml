@@ -8,9 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="78aca35d-dfef-44f7-9a31-083428fe5c5f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/predig/predig.war" afterPath="$PROJECT_DIR$/out/artifacts/predig/predig.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java" afterPath="$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/BloodPressureController.java" afterPath="$PROJECT_DIR$/src/controllers/BloodPressureController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/domain/BloodPressure.java" afterPath="$PROJECT_DIR$/src/domain/BloodPressure.java" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +36,7 @@
       <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/db/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="0">
               <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,8 +48,8 @@
       <file leaf-file-name="BloodPressureAPI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="253">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,14 +60,29 @@
       <file leaf-file-name="BloodPressureController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/BloodPressureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="724">
+              <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1512739542000" expanded="true" signature="580:643" ph="SELECT * FRO... bloodPressure" />
-                <marker date="1512739542000" expanded="true" signature="580:644" ph="SELECT * FRO... bloodPressure" />
-                <marker date="1512739542000" expanded="true" signature="580:660" ph="SELECT * FRO... bloodpressure" />
-                <marker date="1512739542000" expanded="true" signature="1774:1895" ph="SELECT * FRO... bloodpressure" />
+                <marker date="1512819787000" expanded="true" signature="479:542" ph="SELECT * FRO... bloodPressure" />
+                <marker date="1512819787000" expanded="true" signature="479:543" ph="SELECT * FRO... bloodPressure" />
+                <marker date="1512819787000" expanded="true" signature="479:559" ph="SELECT * FRO... bloodpressure" />
+                <marker date="1512819787000" expanded="true" signature="1673:1794" ph="SELECT * FRO... bloodpressure" />
+                <marker date="1512819787000" expanded="true" signature="2783:2816" ph="INSERT INTO public.bloodpressure... " />
+                <marker date="1512819787000" expanded="true" signature="2783:2882" ph="INSERT INTO public.bloodpressure... " />
+                <marker date="1512819787000" expanded="true" signature="2783:2915" ph="INSERT INTO public.bloodpressure... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BloodPressure.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/BloodPressure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,9 +121,9 @@
         <option value="$PROJECT_DIR$/src/api/RestApplication.java" />
         <option value="$PROJECT_DIR$/WebContent/jspFinal.jsp" />
         <option value="$PROJECT_DIR$/src/api/resources/VisitsDoctor.java" />
-        <option value="$PROJECT_DIR$/src/domain/BloodPressure.java" />
         <option value="$PROJECT_DIR$/src/db/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java" />
+        <option value="$PROJECT_DIR$/src/domain/BloodPressure.java" />
         <option value="$PROJECT_DIR$/src/controllers/BloodPressureController.java" />
       </list>
     </option>
@@ -122,7 +137,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="9" />
     <option name="y" value="23" />
-    <option name="width" value="1387" />
+    <option name="width" value="1431" />
     <option name="height" value="859" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -143,9 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +218,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -401,15 +416,15 @@
       <workItem from="1512668064656" duration="2778000" />
       <workItem from="1512671828435" duration="1108000" />
       <workItem from="1512737685121" duration="1894000" />
+      <workItem from="1512817533492" duration="1833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8654000" />
+    <option name="totallyTimeSpent" value="10487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1387" height="859" extended-state="0" />
-    <editor active="true" />
+    <frame x="9" y="23" width="1431" height="859" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -430,10 +445,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.276178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37565446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21204188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26319703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19582434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -466,6 +481,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/BloodPressureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1512819787000" expanded="true" signature="479:542" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:543" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:559" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="1673:1794" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="2783:2816" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2882" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2915" ph="INSERT INTO public.bloodpressure... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -482,10 +524,13 @@
           <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512739542000" expanded="true" signature="580:643" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1512739542000" expanded="true" signature="580:644" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1512739542000" expanded="true" signature="580:660" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1512739542000" expanded="true" signature="1774:1895" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="479:542" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:543" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:559" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="1673:1794" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="2783:2816" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2882" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2915" ph="INSERT INTO public.bloodpressure... " />
           </folding>
         </state>
       </provider>
@@ -516,10 +561,13 @@
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512739542000" expanded="true" signature="580:643" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1512739542000" expanded="true" signature="580:644" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1512739542000" expanded="true" signature="580:660" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1512739542000" expanded="true" signature="1774:1895" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="479:542" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:543" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:559" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="1673:1794" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="2783:2816" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2882" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2915" ph="INSERT INTO public.bloodpressure... " />
           </folding>
         </state>
       </provider>
@@ -634,17 +682,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/BloodPressure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/db/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="0">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -654,8 +694,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/BloodPressure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -664,14 +714,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/BloodPressureController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        <state relative-caret-position="724">
+          <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512739542000" expanded="true" signature="580:643" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1512739542000" expanded="true" signature="580:644" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1512739542000" expanded="true" signature="580:660" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1512739542000" expanded="true" signature="1774:1895" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="479:542" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:543" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1512819787000" expanded="true" signature="479:559" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="1673:1794" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1512819787000" expanded="true" signature="2783:2816" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2882" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1512819787000" expanded="true" signature="2783:2915" ph="INSERT INTO public.bloodpressure... " />
           </folding>
         </state>
       </provider>

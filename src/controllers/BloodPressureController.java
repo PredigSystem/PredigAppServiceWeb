@@ -3,10 +3,7 @@ package controllers;
 import db.DBConnection;
 import domain.BloodPressure;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,6 +63,27 @@ public final class BloodPressureController {
             System.err.println(e.getMessage());
         }
 
+        return bloodPressure;
+    }
+
+    public static BloodPressure create(BloodPressure bloodPressure) {
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO public.bloodpressure (id, userid, date, latitude, longitude, systolic, diastolic, pulse) VALUES (?, ?, ?, ?, ?, ?, ?, ?);", Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, bloodPressure.generateId());
+            statement.setString(2, bloodPressure.getUserId());
+            statement.setDate(3, bloodPressure.getDate());
+            statement.setDouble(4, bloodPressure.getLatitude());
+            statement.setDouble(5, bloodPressure.getLongitude());
+            statement.setDouble(6, bloodPressure.getSystolic());
+            statement.setDouble(7, bloodPressure.getDiastolic());
+            statement.setInt(8, bloodPressure.getPulse());
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            System.err.println("SQL Error on Create BloodPressur");
+            System.err.println(e.getMessage());
+            return null;
+        }
         return bloodPressure;
     }
 }
