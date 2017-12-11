@@ -69,6 +69,9 @@ public final class BloodPressureController {
     public static BloodPressure create(BloodPressure bloodPressure) {
         try (Connection connection = DBConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement("INSERT INTO public.bloodpressure (id, userid, date, latitude, longitude, systolic, diastolic, pulse) VALUES (?, ?, ?, ?, ?, ?, ?, ?);", Statement.RETURN_GENERATED_KEYS)) {
+            if(bloodPressure.getDate() == null) bloodPressure.setDate(new Date(new java.util.Date().getTime()));
+
+            //TODO: Check ID if exists
             statement.setString(1, bloodPressure.generateId());
             statement.setString(2, bloodPressure.getUserId());
             statement.setDate(3, bloodPressure.getDate());
