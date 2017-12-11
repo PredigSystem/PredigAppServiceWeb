@@ -1,12 +1,11 @@
 package domain;
 
-import java.sql.Date;
 import java.util.UUID;
 
 public class BloodPressure {
     private String userId;
 
-    private Date date;
+    private Long date;
     private Double latitude;
     private Double longitude;
 
@@ -18,7 +17,7 @@ public class BloodPressure {
 
     }
 
-    public BloodPressure(String userId, Date date, Double latitude, Double longitude, Double systolic, Double diastolic, Integer pulse) {
+    public BloodPressure(String userId, Long date, Double latitude, Double longitude, Double systolic, Double diastolic, Integer pulse) {
         this.userId = userId;
         this.date = date;
         this.latitude = latitude;
@@ -41,11 +40,11 @@ public class BloodPressure {
         this.userId = userId;
     }
 
-    public Date getDate() {
+    public Long getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Long date) {
         this.date = date;
     }
 
