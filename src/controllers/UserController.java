@@ -40,7 +40,7 @@ public final class UserController {
         user.setPassword(encPassword);
 
         try (Connection connection = DBConnection.getConnection();
-             PreparedStatement statement = connection.prepareStatement("INSERT INTO public.user(id, name, nif, password, email, phone, address, createdat) VALUES (?, ?, ?, ?, ?, ?, ?, ?);", Statement.RETURN_GENERATED_KEYS)) {
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO public.user(id, name, nif, password, email, phone, address, createdat, role) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);", Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, user.generateId());
             statement.setString(2, user.getName());
             statement.setString(3, user.getNif());

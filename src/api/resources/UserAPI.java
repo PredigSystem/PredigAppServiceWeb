@@ -3,6 +3,7 @@ package api.resources;
 import controllers.UserController;
 import domain.LogIn;
 import domain.User;
+import domain.UserID;
 
 import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.Consumes;
@@ -25,7 +26,7 @@ public class UserAPI {
         String userId = UserController.logIn(logIn);
 
         if (userId != null) {
-            return Response.ok(userId).build();
+            return Response.ok(new UserID(userId)).build();
         } else {
             return Response.serverError().status(Response.Status.INTERNAL_SERVER_ERROR).build();
         }
