@@ -3,6 +3,7 @@ package controllers;
 import db.DBConnection;
 import domain.BloodPressure;
 
+import java.util.Date;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,7 @@ public final class BloodPressureController {
                 while (resultSet.next()) {
                     bloodPressureList.add(new BloodPressure(
                             userId,
-                            resultSet.getDate("date"),
+                            resultSet.getDate("date").getTime(),
                             resultSet.getDouble("latitude"),
                             resultSet.getDouble("longitude"),
                             resultSet.getDouble("systolic"),
@@ -48,7 +49,7 @@ public final class BloodPressureController {
                 resultSet.next();
                 bloodPressure  = new BloodPressure(
                         userId,
-                        resultSet.getDate("date"),
+                        resultSet.getDate("date").getTime(),
                         resultSet.getDouble("latitude"),
                         resultSet.getDouble("longitude"),
                         resultSet.getDouble("systolic"),
@@ -69,9 +70,12 @@ public final class BloodPressureController {
     public static BloodPressure create(BloodPressure bloodPressure) {
         try (Connection connection = DBConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement("INSERT INTO public.bloodpressure (id, userid, date, latitude, longitude, systolic, diastolic, pulse) VALUES (?, ?, ?, ?, ?, ?, ?, ?);", Statement.RETURN_GENERATED_KEYS)) {
+            if(bloodPressure.getDate() == null) bloodPressure.setDate(new Date().getTime());
+
+            //TODO: Check ID if exists
             statement.setString(1, bloodPressure.generateId());
             statement.setString(2, bloodPressure.getUserId());
-            statement.setDate(3, bloodPressure.getDate());
+            statement.setDate(3, new java.sql.Date(bloodPressure.getDate()));
             statement.setDouble(4, bloodPressure.getLatitude());
             statement.setDouble(5, bloodPressure.getLongitude());
             statement.setDouble(6, bloodPressure.getSystolic());
