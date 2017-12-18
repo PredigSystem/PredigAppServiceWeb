@@ -11,7 +11,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import controllers.BloodPressureController;
 import controllers.VisitsDoctorController;
+import domain.BloodPressure;
 import domain.VisitsDoctor;
 
 @RequestScoped
@@ -34,6 +36,17 @@ public class VisitsDoctorApi {
             return Response.status(Response.Status.NOT_FOUND).build();
 
         return Response.ok(visitDoctorList).build();
+    }
+    
+    @GET
+    @Path("/{patient}/last")
+    public Response getLastVisitsDoctor(@PathParam("patient") String id) {
+        VisitsDoctor visitsDoctor = VisitsDoctorController.getLastVisitsDoctorByUserId(id);
+
+        if(visitsDoctor == null)
+            return Response.status(Response.Status.NOT_FOUND).build();
+
+        return Response.ok(visitsDoctor).build();
     }
 
 }
