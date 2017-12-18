@@ -25,8 +25,7 @@ public class VisitsDoctorController {
                 		visitsDoctorList.add(new VisitsDoctor(
                             userId,
                             resultSet.getString("doctor"),
-                            resultSet.getDate("date"),
-                            resultSet.getTime("time"),
+                            resultSet.getDate("date").getTime(),
                             resultSet.getString("reason")
                     ));
                 }
@@ -52,8 +51,7 @@ public class VisitsDoctorController {
                 visitsDoctor  = new VisitsDoctor(
                         userId,
                         resultSet.getString("doctor"),
-                        resultSet.getDate("date"),
-                        resultSet.getTime("time"),
+                        resultSet.getDate("date").getTime(),
                         resultSet.getString("reason")
                 );
 
