@@ -26,6 +26,7 @@ public class VisitsDoctorController {
                             userId,
                             resultSet.getString("doctor"),
                             resultSet.getDate("date").getTime(),
+                            resultSet.getString("time"),
                             resultSet.getString("reason")
                     ));
                 }
@@ -52,6 +53,7 @@ public class VisitsDoctorController {
                         userId,
                         resultSet.getString("doctor"),
                         resultSet.getDate("date").getTime(),
+                        resultSet.getString("time"),                        
                         resultSet.getString("reason")
                 );
 

@@ -8,15 +8,18 @@ public class VisitsDoctor {
 	private String doctor;
 
     private Long date;
+	private String time;
+
     
     private String reason;
 
     public VisitsDoctor(){}
 
-    public VisitsDoctor(String userId, String doctor, Long date, String reason) {
+    public VisitsDoctor(String userId, String doctor, Long date, String time, String reason) {
         this.userId = userId;
         this.doctor = doctor;
         this.date = date;
+        this.time = time;
         this.reason = reason;
     }
 
@@ -45,6 +48,13 @@ public class VisitsDoctor {
         this.date = date;
     }
     
+    public String getTime() {
+		return this.time;
+    }
+
+    public void setTime(String time) {
+		this.time = time;	
+    }	 	   
     
     public String getReason() {
     		return this.reason;
