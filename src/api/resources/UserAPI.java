@@ -5,11 +5,17 @@ import domain.LogIn;
 import domain.User;
 import domain.UserID;
 
+import java.io.IOException;
+
 import javax.enterprise.context.RequestScoped;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -41,6 +47,25 @@ public class UserAPI {
         } else {
             return Response.ok(user).build();
         }
+    }
+    
+    @POST
+    @Path("/WebLogIn")
+    @Consumes (MediaType.APPLICATION_FORM_URLENCODED)
+    public void authenticate(@FormParam("username") String username,
+            					@FormParam("password") String password,
+            					@Context HttpServletResponse response,
+							@Context HttpServletRequest request) throws IOException {
+    	
+    		LogIn login  = new LogIn(username, password);
+    		String userId = UserController.logIn(login);
+    		
+        if (userId != null) {
+            response.sendRedirect("/PredigAppServiceWeb/table.jsp");
+        } else {
+            request.setAttribute("authenticationError", "Invalid email/password.");
+        }
+    	
     }
 
 

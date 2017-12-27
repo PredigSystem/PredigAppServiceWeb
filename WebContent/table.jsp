@@ -72,37 +72,37 @@
                                     <tbody>
                                         <tr>
                                         	<td>1</td>
-                                        	<td><a href="dashboard.html">Dakota Rice</a></td>
+                                        	<td><a href="dashboard.jsp">Dakota Rice</a></td>
                                         	<td>1 day ago</td>
                                         	<td>Oud-Turnhout</td>
                                         </tr>
                                         <tr>
                                         	<td>2</td>
-                                        	<td><a href="dashboard.html">Minerva Hooper</a></td>
+                                        	<td><a href="dashboard.jsp">Minerva Hooper</a></td>
                                         	<td>2 weeks ago</td>
                                         	<td>Sinaai-Waas</td>
                                         </tr>
                                         <tr>
                                         	<td>3</td>
-                                        	<td><a href="dashboard.html">Sage Rodriguez</a></td>
+                                        	<td><a href="dashboard.jsp">Sage Rodriguez</a></td>
                                         	<td>4 days ago</td>
                                         	<td>Baileux</td>
                                         </tr>
                                         <tr>
                                         	<td>4</td>
-                                        	<td><a href="dashboard.html">Philip Chaney</a></td>
+                                        	<td><a href="dashboard.jsp">Philip Chaney</a></td>
                                         	<td>2 hours ago</td>
                                         	<td>Overland Park</td>
                                         </tr>
                                         <tr>
                                         	<td>5</td>
-                                        	<td><a href="dashboard.html">Doris Greene</a></td>
+                                        	<td><a href="dashboard.jsp">Doris Greene</a></td>
                                         	<td>1 minute ago</td>
                                         	<td>Feldkirchen in Kärnten</td>
                                         </tr>
                                         <tr>
                                         	<td>6</td>
-                                        	<td><a href="dashboard.html">Mason Porter</a></td>
+                                        	<td><a href="dashboard.jsp">Mason Porter</a></td>
                                         	<td>2 months ago</td>
                                         	<td>Gloucester</td>
                                         </tr>

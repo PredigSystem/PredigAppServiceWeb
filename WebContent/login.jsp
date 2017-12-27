@@ -58,12 +58,12 @@
                                 <h4 class="title">Log in</h4>
                             </div>
                             <div class="content">
-                                <form method="POST" action="table.jsp"> <!-- action="api/user/logIn" -->
+                                <form method="POST" action="api/user/WebLogIn"> <!-- action="/api/user/logIn" -->
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>User</label>
-                                                <input type="text" class="form-control border-input" placeholder="Company" value="username">
+                                                <input type="text" class="form-control border-input" placeholder="Company" value="" id="username" name="username">
                                             </div>
                                         </div>
                                     </div>
@@ -72,7 +72,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Password</label>
-                                                <input type="password" class="form-control border-input" placeholder="Company" value="Password">
+                                                <input type="password" class="form-control border-input" placeholder="Company" value="" id="password" name="password">
                                             </div>
                                         </div>
                                     </div>
