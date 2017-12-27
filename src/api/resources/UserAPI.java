@@ -55,8 +55,8 @@ public class UserAPI {
     public void authenticate(@FormParam("username") String username,
             					@FormParam("password") String password,
             					@Context HttpServletResponse response,
-							@Context HttpServletRequest request) throws IOException {
-    	
+							@Context HttpServletRequest request) throws IOException 
+    {	
     		LogIn login  = new LogIn(username, password);
     		String userId = UserController.logIn(login);
     		
@@ -66,6 +66,37 @@ public class UserAPI {
             request.setAttribute("authenticationError", "Invalid email/password.");
         }
     	
+    }
+    
+    @POST
+    @Path("/createUser")
+    @Consumes (MediaType.APPLICATION_FORM_URLENCODED)
+    public void createUserWeb(@FormParam("name") String name,
+							@FormParam("nif") String nif,
+							@FormParam("email") String email,
+							@FormParam("password") String password,
+							@FormParam("address") String address,
+							@FormParam("phone") String phone,
+							@FormParam("role") String role,
+							@Context HttpServletResponse response,
+							@Context HttpServletRequest request) throws IOException 
+    {	
+		
+		User user = new User(name, nif, password, email, Integer.parseInt(phone), address, null, role);
+		System.out.println(name);
+		System.out.println(nif);
+		System.out.println(email);
+		System.out.println(phone);
+		System.out.println(address);
+		System.out.println(role);
+		
+		user = UserController.createUser(user);
+		
+        if (user != null) {
+            response.sendRedirect("/PredigAppServiceWeb/table.jsp");
+        } else {
+            request.setAttribute("creationUser", "Creation user failed");
+        }
     }
 
 

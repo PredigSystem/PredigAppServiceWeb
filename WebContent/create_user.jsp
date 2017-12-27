@@ -39,18 +39,18 @@
             <h4 class="title">Create Patient</h4>
         </div>
         <div class="content">
-            <form action="table.jsp">
+            <form method="POST" action="api/user/createUser">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control border-input" splaceholder="Name" value="Creative Code Inc." name="name" id="name">
+                            <input type="text" class="form-control border-input" splaceholder="Name" value="" name="name" id="name">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Nif</label>
-                            <input type="text" class="form-control border-input" placeholder="Nif" value="47904987N" name="nif" id="nif">
+                            <input type="text" class="form-control border-input" placeholder="Nif" value="" name="nif" id="nif">
                         </div>
                     </div>
                 </div>
@@ -59,22 +59,28 @@
                     <div class="col-md-5">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="text" class="form-control border-input" placeholder="Email" value="Chet" name="email" id="email">
+                            <input type="text" class="form-control border-input" placeholder="Email" value="" name="email" id="email">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Phone</label>
-                            <input type="text" class="form-control border-input" placeholder="Phone" value="Faker" name="phone" id="phone">
+                            <label>Password</label>
+                            <input type="text" class="form-control border-input" placeholder="Password" value="" name="password" id="password">
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-5">
                         <div class="form-group">
                             <label>Address</label>
-                            <input type="text" class="form-control border-input" placeholder="Home Address" value="Melbourne, Australia">
+                            <input type="text" class="form-control border-input" placeholder="Home Address" value="" id="address" name="address">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="text" class="form-control border-input" placeholder="Phone" value="" name="phone" id="phone">
                         </div>
                     </div>
                 </div>
@@ -83,7 +89,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>Role</label>
-                            <select class="form-control border-input">
+                            <select class="form-control border-input" name="role" id="role">
                             		<option id="patient" name="patient"> Patient</option>
                             		<option id="doctor" name="doctor"> Doctor</option>
                             </select>
