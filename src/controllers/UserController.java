@@ -14,7 +14,7 @@ public final class UserController {
         String userId = null;
 
         try (Connection connection = DBConnection.getConnection();
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM public.user WHERE email = '" + logIn.getUsername() + "';")
+            PreparedStatement statement = connection.prepareStatement("SELECT password, id FROM public.user WHERE email = '" + logIn.getUsername() + "';")
             ){
             try (ResultSet resultSet = statement.executeQuery()) {
                 resultSet.next();
