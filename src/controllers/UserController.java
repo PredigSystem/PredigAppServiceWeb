@@ -7,6 +7,8 @@ import domain.User;
 import other.BCrypt;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public final class UserController {
 
@@ -54,6 +56,67 @@ public final class UserController {
 
         } catch (SQLException e) {
             System.err.println("SQL Error on Create User");
+            System.err.println(e.getMessage());
+            return null;
+        }
+        return user;
+    }
+
+    public static List<User> getAllPatients(){
+        List<User> userList = new ArrayList<>();
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM public.user WHERE role = 'patient' OR role = 'Patient' OR role = 'PATIENT';")) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+
+                while (resultSet.next()) {
+                    userList.add(new User(
+                            resultSet.getString("name"),
+                            resultSet.getString("nif"),
+                            resultSet.getString("password"),
+                            resultSet.getString("email"),
+                            resultSet.getInt("phone"),
+                            resultSet.getString("address"),
+                            resultSet.getDate("createdat"),
+                            resultSet.getString("role")
+                    ));
+                }
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+                return userList;
+            }
+
+        } catch (SQLException e) {
+            System.err.println("SQL Error on Getting all Patients");
+            System.err.println(e.getMessage());
+            return userList;
+        }
+        return userList;
+    }
+
+    public static User getPatientByNif(String nif){
+        User user;
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM public.user WHERE nif = '" + nif + "';")) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+
+                resultSet.next();
+                user = new User(
+                        resultSet.getString("name"),
+                        resultSet.getString("nif"),
+                        resultSet.getString("password"),
+                        resultSet.getString("email"),
+                        resultSet.getInt("phone"),
+                        resultSet.getString("address"),
+                        resultSet.getDate("createdat"),
+                        resultSet.getString("role")
+                );
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+                return null;
+            }
+
+        } catch (SQLException e) {
+            System.err.println("SQL Error on Getting Patient by NIF");
             System.err.println(e.getMessage());
             return null;
         }

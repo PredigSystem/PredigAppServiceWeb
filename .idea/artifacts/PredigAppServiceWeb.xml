@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="predig">
+  <artifact type="war" build-on-make="true" name="PredigAppServiceWeb">
     <output-path>$PROJECT_DIR$/out/artifacts/predig</output-path>
-    <root id="archive" name="predig.war">
+    <root id="archive" name="PredigAppServiceWeb.war">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="PredigAppServiceWeb" />

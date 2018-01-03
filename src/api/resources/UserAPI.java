@@ -61,6 +61,7 @@ public class UserAPI {
     		String userId = UserController.logIn(login);
     		
         if (userId != null) {
+            request.getSession().setAttribute("loggedInUser", userId);
             response.sendRedirect("/PredigAppServiceWeb/table.jsp");
         } else {
             request.setAttribute("authenticationError", "Invalid email/password.");

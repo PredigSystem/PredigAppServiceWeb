@@ -65,7 +65,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="text" class="form-control border-input" placeholder="Password" value="" name="password" id="password">
+                            <input type="password" class="form-control border-input" placeholder="Password" value="" name="password" id="password">
                         </div>
                     </div>
                 </div>

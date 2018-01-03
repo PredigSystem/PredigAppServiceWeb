@@ -1,5 +1,8 @@
+<%@ page import="domain.User" %>
+<%@ page import="java.util.List" %>
+<%@ page import="controllers.UserController" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -33,95 +36,62 @@
 </head>
 <body>
 
-		        <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Search patient</h4>
-                                <p class="category">Search by Name or clinical History</p>
-								<br/>
-									<form>
-										<div class="row">
-												<div class="col-md-12">
-												<div class="form-group">
-														<input type="text" class="form-control border-input" placeholder="Company" value="Search patient">
-												</div>
-											</div>
-										</div>
-								</form>
-                            </div>
-
+<%
+    HttpSession httpSession = request.getSession(false);
+    if(session == null || session.getAttribute("loggedInUser") == null){
+%>
+    <h2>Please, <a href="login.jsp">log in</a></h2>
+<%
+    }else {
+%>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-plain">
+                        <div class="header">
+                            <h4 class="title">List of patients</h4>
+                        </div>
+                        <div class="content table-responsive table-full-width">
+                            <table class="table table-hover">
+                                <thead>
+                                <th>NIF</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Address</th>
+                                </thead>
+                                <tbody>
+                                <%
+                                    List<User> userList = UserController.getAllPatients();
+                                    for(User u : userList){
+                                %>
+                                <tr>
+                                    <td><%= u.getNif() %></td>
+                                    <td><a href="dashboard.jsp?patient=<%= u.getNif() %>"><%= u.getName() %></a></td>
+                                    <td><%= u.getPhone() %></td>
+                                    <td><%= u.getAddress() %></td>
+                                </tr>
+                                <%
+                                    }
+                                %>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-
-								   <div class="col-md-12">
-                        <div class="card card-plain">
-                            <div class="header">
-                                <h4 class="title">List of patients</h4>
-                            </div>
-                            <div class="content table-responsive table-full-width">
-                                <table class="table table-hover">
-                                    <thead>
-                                      <th>ID</th>
-                                    	<th>Name</th>
-                                    	<th>Last measure</th>
-                                    	<th>City</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        	<td>1</td>
-                                        	<td><a href="dashboard.jsp">Dakota Rice</a></td>
-                                        	<td>1 day ago</td>
-                                        	<td>Oud-Turnhout</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>2</td>
-                                        	<td><a href="dashboard.jsp">Minerva Hooper</a></td>
-                                        	<td>2 weeks ago</td>
-                                        	<td>Sinaai-Waas</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>3</td>
-                                        	<td><a href="dashboard.jsp">Sage Rodriguez</a></td>
-                                        	<td>4 days ago</td>
-                                        	<td>Baileux</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>4</td>
-                                        	<td><a href="dashboard.jsp">Philip Chaney</a></td>
-                                        	<td>2 hours ago</td>
-                                        	<td>Overland Park</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>5</td>
-                                        	<td><a href="dashboard.jsp">Doris Greene</a></td>
-                                        	<td>1 minute ago</td>
-                                        	<td>Feldkirchen in Kärnten</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>6</td>
-                                        	<td><a href="dashboard.jsp">Mason Porter</a></td>
-                                        	<td>2 months ago</td>
-                                        	<td>Gloucester</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-				<form action="create_user.jsp">
-					<div class="text-center">
-							<button type="submit" class="btn btn-info btn-fill btn-wd">Create new Patient</button>
-					</div>
-				</form>
-
                 </div>
+
+                <form action="create_user.jsp">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-info btn-fill btn-wd">Create new Patient</button>
+                    </div>
+                </form>
+
             </div>
         </div>
-
+    </div>
+<%
+    }
+%>
 </body>
 
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>

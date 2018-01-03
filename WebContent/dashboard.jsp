@@ -1,5 +1,7 @@
+<%@ page import="domain.User" %>
+<%@ page import="controllers.UserController" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -32,16 +34,25 @@
     <link href="css/themify-icons.css" rel="stylesheet">
 </head>
 <body>
-
+<%
+    HttpSession httpSession = request.getSession(false);
+    if(session == null || session.getAttribute("loggedInUser") == null){
+%>
+<h2>Please, <a href="login.jsp">log in</a></h2>
+<%
+}else {
+    String patientNif =request.getParameter("patient").toString();
+    User user = UserController.getPatientByNif(patientNif);
+%>
 <div class="wrapper">
     <div class="sidebar" data-background-color="white" data-active-color="danger">
 
-    <!--
-		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
-		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-	-->
+        <!--
+            Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+            Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+        -->
 
-    	<div class="sidebar-wrapper">
+        <div class="sidebar-wrapper">
             <div class="logo">
                 PredigSystem
             </div>
@@ -65,8 +76,8 @@
                         <p>Add new routine</p>
                     </a>
                 </li>
-							</ul>
-    	</div>
+            </ul>
+        </div>
     </div>
 
     <div class="main-panel">
@@ -81,7 +92,7 @@
                     </button>
                     <a class="navbar-brand" href="#">Patient name</a>
                 </div>
-              </div>
+            </div>
         </nav>
 
 
@@ -92,7 +103,7 @@
                         <div class="card">
                             <div class="content">
                                 <div class="row">
-                                      <div class="col-xs-12">
+                                    <div class="col-xs-12">
                                         <div class="numbers">
                                             <p>Measures/day</p>
                                             3
@@ -141,7 +152,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,8 +197,13 @@
                 </div>
             </div>
         </div>
-      </div>
+    </div>
 </div>
+
+<%
+    }
+%>
+
 </body>
 
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
