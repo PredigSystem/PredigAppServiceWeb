@@ -84,12 +84,6 @@ public class UserAPI {
     {	
 		
 		User user = new User(name, nif, password, email, Integer.parseInt(phone), address, null, role);
-		System.out.println(name);
-		System.out.println(nif);
-		System.out.println(email);
-		System.out.println(phone);
-		System.out.println(address);
-		System.out.println(role);
 		
 		user = UserController.createUser(user);
 		
