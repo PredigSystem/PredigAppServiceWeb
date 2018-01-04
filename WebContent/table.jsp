@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>PredigAppWeb</title>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon.png">
