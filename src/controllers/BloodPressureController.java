@@ -90,4 +90,91 @@ public final class BloodPressureController {
         }
         return bloodPressure;
     }
+    
+    public static String[] getBloodPressureSystolic(String userId) {
+    	
+		String array[] = new String [10];
+    		
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT systolic FROM public.bloodpressure WHERE bloodpressure.userid = '" + userId + "' order by bloodpressure.date limit 10;")) {
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+            		int i = 0;
+                while (resultSet.next()) {
+                		array[i] = String.valueOf(resultSet.getDouble("systolic"));
+                		i++;
+                }
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+            }
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+
+        return array;
+    }
+    
+    public static String[] getBloodPressureDiastolic(String userId) {
+		String array[] = new String [10];
+
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT diastolic FROM public.bloodpressure WHERE bloodpressure.userid = '" + userId + "' order by bloodpressure.date limit 10;")) {
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+            		int i = 0;
+                while (resultSet.next()) {
+                		array[i] = String.valueOf(resultSet.getDouble("diastolic"));
+                		i++;
+                }
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+            }
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+
+        return array;
+    }
+    
+    public static String[] getBloodPressuePulse(String userId) {
+		String array[] = new String [3];
+		Date aux = new Date();
+		String date = String.valueOf(aux.getDay()) +"/"+ String.valueOf(aux.getMonth()) +"/"+String.valueOf(aux.getYear()-1);
+		Date sql_date = new Date(date);
+		int total = 0;
+		int normal = 0;
+		int regular = 0;
+		int bad = 0;
+
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT systolic, diastolic FROM public.bloodpressure WHERE bloodpressure.userid = '" + userId + "' and bloodpressure.date >'"+sql_date+"' order by bloodpressure.date;")) {
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+
+                while (resultSet.next()) {
+                		if(resultSet.getDouble("systolic") < 130 && resultSet.getDouble("diastolic") < 80) {
+                			normal++;
+                			
+                		} else if( (resultSet.getDouble("systolic") > 130 && resultSet.getDouble("systolic") < 180) || (resultSet.getDouble("diastolic") > 80 && resultSet.getDouble("diastolic") < 90 ) ) {
+                			regular++;
+                		} else {
+                			bad++;
+                		}
+
+                }
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+            }
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+        
+        total = normal + regular + bad;
+        
+        array[0] = String.valueOf( (normal * 100) / total );
+        array[1] = String.valueOf( (regular * 100) / total );
+        array[2] = String.valueOf( (bad * 100) / total );
+
+        return array;
+    }
 }

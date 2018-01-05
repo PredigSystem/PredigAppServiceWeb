@@ -36,8 +36,8 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="css/themify-icons.css" rel="stylesheet">
     
-        <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
 	<script src="js/bootstrap-checkbox-radio.js"></script>
@@ -129,7 +129,7 @@
 														<h4 class="title">New Routine</h4>
 												</div>
 												<div class="content">
-														<form action="dashboard.html">
+														<form action="dashboard.jsp?patient=<%= patientNif %>">
 																<div class="row">
 																		<div class="col-md-6">
 																				<div class="form-group">

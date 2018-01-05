@@ -36,8 +36,8 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="css/themify-icons.css" rel="stylesheet">
     
-        <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
 	<script src="js/bootstrap-checkbox-radio.js"></script>
@@ -69,9 +69,9 @@
     String patientId = UserController.getUserId(patientNif);
     String patientName = UserController.getUserName(patientNif);
     BloodPressure bloodPressure = BloodPressureController.getLastBloodPressureByUserId(patientId);
-    String systolic[] = BloodPressureController.getBloodPressureSystolic();
-    String diastolic[] = BloodPressureController.getBloodPressureDiastolic();
-    String pulse[] = BloodPressureController.getBloodPressuePulse();
+    String systolic[] = BloodPressureController.getBloodPressureSystolic(patientId);
+    String diastolic[] = BloodPressureController.getBloodPressureDiastolic(patientId);
+    String pulse[] = BloodPressureController.getBloodPressuePulse(patientId);
 %>
 <div class="wrapper">
     <div class="sidebar" data-background-color="white" data-active-color="danger">
@@ -288,7 +288,7 @@
 	    Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 	
 	    Chartist.Pie('#chartPreferences', {
-	      labels: ['62%','32%','6%'],
+	      labels: [<%= pulse[0] %>,<%= pulse[1] %>,<%= pulse[2] %>],
 	      series: [<%= pulse[0] %>, <%= pulse[1] %>, <%= pulse[2] %>]
 	    });
 
