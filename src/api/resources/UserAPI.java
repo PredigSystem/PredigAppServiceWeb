@@ -48,6 +48,17 @@ public class UserAPI {
             return Response.ok(user).build();
         }
     }
+
+    @POST
+    @Path("/update")
+    public Response update(User user) {
+        user = UserController.updateUser(user);
+        if (user == null) {
+            return Response.serverError().status(Response.Status.INTERNAL_SERVER_ERROR).build();
+        } else {
+            return Response.ok(user).build();
+        }
+    }
     
     @POST
     @Path("/WebLogIn")

@@ -62,6 +62,26 @@ public final class UserController {
         return user;
     }
 
+    public static User updateUser(User user){
+        String encPassword = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt(15));
+        user.setPassword(encPassword);
+
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("UPDATE public.user SET name=?, password=?, email=?, phone=?, address=?) WHERE nif = " + user.getNif() +";", Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(2, user.getName());
+            statement.setString(4, user.getPassword());
+            statement.setString(5, user.getEmail());
+            statement.setInt(6, user.getPhone());
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            System.err.println("SQL Error on Update User");
+            System.err.println(e.getMessage());
+            return null;
+        }
+        return user;
+    }
+
     public static List<User> getAllPatients(){
         List<User> userList = new ArrayList<>();
         try (Connection connection = DBConnection.getConnection();
