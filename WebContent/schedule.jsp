@@ -30,14 +30,15 @@
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="css/demo.css" rel="stylesheet" />
+    <link href="css/schedule.css" rel="stylesheet" />
 
     <!--  Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="css/themify-icons.css" rel="stylesheet">
     
-        <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
 	<script src="js/bootstrap-checkbox-radio.js"></script>
@@ -56,6 +57,7 @@
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="js/demo.js"></script>
+	<script src="js/schedule.js"></script>
 </head>
 <body>
 <%
@@ -125,7 +127,13 @@
         <div class="content">
             <div class="container-fluid">
               <br />
+              <form >
+              	<a href="dashboard.jsp?patient=<%= patientNif %>" class="btn btn-info btn-fill btn-wd" >Insert new visit</a>
+              </form>
+              <br />
+              
               <div class="cd-schedule loading">
+              
               	<div class="timeline">
               		<ul>
               			<li><span>09:00</span></li>
@@ -307,7 +315,7 @@
               			<div class="body-bg"></div>
               		</div>
 
-              		<a href="#0" class="close">Close</a>
+              		<a href="table.jsp" class="close">Close</a>
               	</div>
 
               	<div class="cover-layer"></div>
@@ -322,11 +330,7 @@
     }
 %>
 
-</body>
-	
-	
-
-	
+</body>	
 	
 	
 </html>

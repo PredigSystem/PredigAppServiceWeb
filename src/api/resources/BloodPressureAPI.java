@@ -50,5 +50,6 @@ public class BloodPressureAPI {
             return Response.ok(bloodPressure).build();
         }
     }
+    
 
 }
