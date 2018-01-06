@@ -154,4 +154,50 @@ public final class UserController {
 
         return password_verified;
     }
+    
+    public static String getUserId(String nif) {
+        String id;
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT id FROM public.user WHERE nif = '" + nif + "';")) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+
+                resultSet.next();
+                
+                id = resultSet.getString("id");
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+                return null;
+            }
+
+        } catch (SQLException e) {
+            System.err.println("SQL Error on Getting Patient by NIF");
+            System.err.println(e.getMessage());
+            return null;
+        }
+        return id;
+    	
+    }
+    
+    public static String getUserName(String nif) {
+        String id;
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT name FROM public.user WHERE nif = '" + nif + "';")) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+
+                resultSet.next();
+                
+                id = resultSet.getString("name");
+            } catch (SQLException e) {
+                System.err.println(e.getMessage());
+                return null;
+            }
+
+        } catch (SQLException e) {
+            System.err.println("SQL Error on Getting Patient by NIF");
+            System.err.println(e.getMessage());
+            return null;
+        }
+        return id;
+    	
+    }
 }
