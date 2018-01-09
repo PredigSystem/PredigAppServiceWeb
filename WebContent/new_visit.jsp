@@ -30,14 +30,13 @@
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="css/demo.css" rel="stylesheet" />
-    <link href="css/schedule.css" rel="stylesheet" />
 
     <!--  Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="css/themify-icons.css" rel="stylesheet">
     
-    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
@@ -57,7 +56,6 @@
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="js/demo.js"></script>
-	<script src="js/schedule.js"></script>
 </head>
 <body>
 <%
@@ -70,7 +68,6 @@
     String patientNif = request.getParameter("patient").toString();
     String patientId = UserController.getUserId(patientNif);
     String patientName = UserController.getUserName(patientNif);
-    BloodPressure bloodPressure = BloodPressureController.getLastBloodPressureByUserId(patientId);
 %>
 <div class="wrapper">
     <div class="sidebar" data-background-color="white" data-active-color="danger">
@@ -92,13 +89,13 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li  class="active">
+                <li>
                     <a href="schedule.jsp?patient=<%= patientNif %>">
                         <i class="ti-user"></i>
                         <p>Patient Schedule</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="new_routine.jsp?patient=<%= patientNif %>">
                         <i class="ti-plus"></i>
                         <p>Add new routine</p>
@@ -124,120 +121,68 @@
         </nav>
 
 
-        <div class="content">
-            <div class="container-fluid">
-              <br />
-              <form >
-              	<a href="new_visit.jsp?patient=<%= patientNif %>" class="btn btn-info btn-fill btn-wd" >Insert new visit</a>
-              </form>
-              <br />
-              
-              <div class="cd-schedule loading">
-              
-              	<div class="timeline">
-              		<ul>
-              			<li><span>09:00</span></li>
-              			<li><span>09:30</span></li>
-              			<li><span>10:00</span></li>
-              			<li><span>10:30</span></li>
-              			<li><span>11:00</span></li>
-              			<li><span>11:30</span></li>
-              			<li><span>12:00</span></li>
-              			<li><span>12:30</span></li>
-              			<li><span>13:00</span></li>
-              			<li><span>13:30</span></li>
-              			<li><span>14:00</span></li>
-              			<li><span>14:30</span></li>
-              			<li><span>15:00</span></li>
-              			<li><span>15:30</span></li>
-              			<li><span>16:00</span></li>
-              			<li><span>16:30</span></li>
-              			<li><span>17:00</span></li>
-              			<li><span>17:30</span></li>
-              			<li><span>18:00</span></li>
-              		</ul>
-              	</div> <!-- .timeline -->
+							<div class="col-lg-4 col-md-4"></div>
+								<div class="col-lg-4 col-md-4">
+										<div class="card">
+												<div class="header">
+														<h4 class="title">New Visit</h4>
+												</div>
+												<div class="content">
+														<form method="POST" action="api/visitsDoctor/insertVisit">
+																<input type="hidden" id="id" name="id" value ="<%= patientId %>">
+																<div class="row">
+																		<div class="col-md-12">
+																				<div class="form-group">
+																						<label>Doctor</label>
+																						<input type="text" class="form-control border-input" placeholder="Doctor" value="" id="doctor" name="doctor">
+																				</div>
+																		</div>
+																</div>
+																<div class="row">
+																		<div class="col-md-6">
+																				<div class="form-group">
+																						<label>Date</label>
+																						<input type="text" class="form-control border-input" placeholder="DD/MM/YYYY" value="" id="date" name="date">
+																				</div>
+																		</div>
+																		<div class="col-md-6">
+																				<div class="form-group">
+																						<label>Time</label>
+																						<input type="text" class="form-control border-input" placeholder="HH:MM" value="" id="time" name="time">
+																				</div>
+																		</div>
+																</div>
 
-              	<div class="events">
-              		<ul>
-              			<li class="events-group">
-              				<div class="top-info"><span>Monday</span></div>
+																<div class="row">
+																		<div class="col-md-12">
+																				<div class="form-group">
+																						<label>Reason</label>
+																						<input type="text" class="form-control border-input" placeholder="Reason" value="" id="reason" name="reason">
+																				</div>
+																		</div>
+																</div>
 
-              				<ul>
+																<div class="text-center">
+																		<button type="submit" class="btn btn-info btn-fill btn-wd">Submit</button>
+																</div>
+																<div class="clearfix"></div>
+														</form>
+												</div>
+										</div>
+								</div>
 
-              				</ul>
-              			</li>
 
-              			<li class="events-group">
-              				<div class="top-info"><span>Tuesday</span></div>
-
-              				<ul>
-              					<li class="single-event" data-start="10:00" data-end="10:30"  data-content="event-rowing-workout" data-event="event-2">
-              						<a href="#0">
-              							<em class="event-name">Visit</em>
-              						</a>
-              					</li>
-
-              				</ul>
-              			</li>
-
-              			<li class="events-group">
-              				<div class="top-info"><span>Wednesday</span></div>
-
-              				<ul>
-
-              				</ul>
-              			</li>
-
-              			<li class="events-group">
-              				<div class="top-info"><span>Thursday</span></div>
-
-              				<ul>
-              					
-              				</ul>
-              			</li>
-
-              			<li class="events-group">
-              				<div class="top-info"><span>Friday</span></div>
-
-              				<ul>
-
-              				</ul>
-              			</li>
-              		</ul>
-              	</div>
-
-              	<div class="event-modal">
-              		<header class="header">
-              			<div class="content">
-              				<span class="event-date"></span>
-              				<h3 class="event-name"></h3>
-              			</div>
-
-              			<div class="header-bg"></div>
-              		</header>
-
-              		<div class="body">
-              			<div class="event-info"></div>
-              			<div class="body-bg"></div>
-              		</div>
-
-              		<a href="table.jsp" class="close">Close</a>
-              	</div>
-
-              	<div class="cover-layer"></div>
-              </div> <!-- .cd-schedule -->
-
-            </div>
-        </div>
-      </div>
-</div>
+			</div>
 
 <%
     }
 %>
 
-</body>	
+</body>
+	
+	
+
+	
 	
 	
 </html>

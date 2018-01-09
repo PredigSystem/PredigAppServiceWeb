@@ -1,15 +1,19 @@
 package controllers;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import db.DBConnection;
 import domain.BloodPressure;
+import domain.User;
 import domain.VisitsDoctor;
+import other.BCrypt;
 
 public class VisitsDoctorController {
 	
@@ -64,6 +68,25 @@ public class VisitsDoctorController {
             System.err.println(e.getMessage());
         }
 
+        return visitsDoctor;
+    }
+    
+    public static VisitsDoctor insertVisit(VisitsDoctor visitsDoctor){
+
+        try (Connection connection = DBConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO public.visits_doctor(userid, doctor, date, reason, time) VALUES (?, ?, ?, ?, ?);", Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, visitsDoctor.getUserId());
+            statement.setString(2, visitsDoctor.getDoctor());
+            statement.setDate(3, new Date(visitsDoctor.getDate()));
+            statement.setString(4, visitsDoctor.getReason());
+            statement.setString(5, visitsDoctor.getTime());
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            System.err.println("SQL Error on Insert new visit");
+            System.err.println(e.getMessage());
+            return null;
+        }
         return visitsDoctor;
     }
 
