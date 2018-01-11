@@ -3,6 +3,7 @@
 <%@page import="domain.BloodPressure"%>
 <%@ page import="domain.User" %>
 <%@ page import="controllers.UserController" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -65,13 +66,13 @@
 <h2>Please, <a href="login.jsp">log in</a></h2>
 <%
 }else {
-    String patientNif = request.getParameter("patient").toString();
+    String patientNif = request.getParameter("patient");
     String patientId = UserController.getUserId(patientNif);
     String patientName = UserController.getUserName(patientNif);
     BloodPressure bloodPressure = BloodPressureController.getLastBloodPressureByUserId(patientId);
     String systolic[] = BloodPressureController.getBloodPressureSystolic(patientId);
     String diastolic[] = BloodPressureController.getBloodPressureDiastolic(patientId);
-    String pulse[] = BloodPressureController.getBloodPressuePulse(patientId);
+    String pulse[] = BloodPressureController.getBloodPressurePulse(patientId);
 %>
 <div class="wrapper">
     <div class="sidebar" data-background-color="white" data-active-color="danger">
@@ -100,9 +101,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="new_routine.jsp?patient=<%= patientNif %>">
+                    <a href="new_visit.jsp?patient=<%= patientNif %>">
                         <i class="ti-plus"></i>
-                        <p>Add new routine</p>
+                        <p>Add new visit</p>
                     </a>
                 </li>
             </ul>
@@ -134,8 +135,8 @@
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div class="numbers">
-                                            <p>systolic/day</p>
-                                            3
+                                            <p>Last systolic measure</p>
+                                            <%= bloodPressure != null ? bloodPressure.getSystolic() : "Not yet" %>
                                         </div>
                                     </div>
                                 </div>
@@ -148,8 +149,8 @@
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div class="numbers">
-                                            <p>Systolic mean</p>
-                                            <%= bloodPressure.getSystolic() %>
+                                            <p>Last diastolic measure</p>
+                                            <%= bloodPressure != null ? bloodPressure.getDiastolic() : "Not yet" %>
                                         </div>
                                     </div>
                                 </div>
@@ -162,8 +163,8 @@
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div class="numbers">
-                                            <p>Diastolic mean</p>
-                                            <%= bloodPressure.getDiastolic() %>
+                                            <p>Last pulse measure</p>
+                                            <%= bloodPressure != null ? bloodPressure.getPulse() : "Not yet" %>
                                         </div>
                                     </div>
                                 </div>
@@ -176,8 +177,11 @@
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div class="numbers">
-                                            <p>Last measure</p>
-                                            <%= new Date(bloodPressure.getDate())%>
+                                            <p>Last measure date</p>
+                                            <%
+                                                SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                                            %>
+                                            <%= bloodPressure != null ? dateFormat.format(new java.util.Date(bloodPressure.getDate())): "Not yet" %>
                                         </div>
                                     </div>
                                 </div>

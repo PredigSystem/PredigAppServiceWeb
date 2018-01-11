@@ -2,6 +2,7 @@ package api.resources;
 
 import java.io.IOException;
 import java.sql.Time;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -70,9 +71,16 @@ public class VisitsDoctorApi {
 							@Context HttpServletResponse response,
 							@Context HttpServletRequest request) throws IOException 
     {
-    		Date pdDate = new Date(date);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+        Date pdDate = null;
+        try{
+            pdDate = sdf.parse(date);
+        }catch (Exception e){
+            request.setAttribute("insertVisit", "Creation visit failed. Date not correct");
+        }
     		
-    		VisitsDoctor visitsDoctor = new VisitsDoctor(id, doctor, pdDate.getTime(), pstime, reason);
+        VisitsDoctor visitsDoctor = new VisitsDoctor(id, doctor, pdDate.getTime(), pstime, reason);
 				
 		visitsDoctor = VisitsDoctorController.insertVisit(visitsDoctor);
 		

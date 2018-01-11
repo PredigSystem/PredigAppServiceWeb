@@ -35,9 +35,11 @@ public class VisitsDoctorController {
                     ));
                 }
             } catch (SQLException e) {
+                System.err.println("Error on getVisitsDoctor ResultSet");
                 System.err.println(e.getMessage());
             }
         } catch (SQLException e) {
+            System.err.println("Error on getVisitsDoctor SQL connection");
             System.err.println(e.getMessage());
         }
 
@@ -62,9 +64,11 @@ public class VisitsDoctorController {
                 );
 
             } catch (SQLException e) {
+                System.err.println("Error on getLastVisitsDoctorByUserId ResultSet");
                 System.err.println(e.getMessage());
             }
         } catch (SQLException e) {
+            System.err.println("Error on getLastVisitsDoctorByUserId SQL Connection");
             System.err.println(e.getMessage());
         }
 

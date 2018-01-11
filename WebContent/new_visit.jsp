@@ -96,12 +96,12 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a href="new_routine.jsp?patient=<%= patientNif %>">
+                    <a href="new_visit.jsp?patient=<%= patientNif %>">
                         <i class="ti-plus"></i>
-                        <p>Add new routine</p>
+                        <p>Add new visit</p>
                     </a>
                 </li>
-							</ul>
+			</ul>
     	</div>
     </div>
 

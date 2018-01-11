@@ -7,10 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aca35d-dfef-44f7-9a31-083428fe5c5f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/new_routine.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/predig/PredigAppServiceWeb.war" afterPath="$PROJECT_DIR$/out/artifacts/predig/PredigAppServiceWeb.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/resources/UserAPI.java" afterPath="$PROJECT_DIR$/src/api/resources/UserAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/UserController.java" afterPath="$PROJECT_DIR$/src/controllers/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/dashboard.jsp" afterPath="$PROJECT_DIR$/WebContent/dashboard.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/new_visit.jsp" afterPath="$PROJECT_DIR$/WebContent/new_visit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/schedule.jsp" afterPath="$PROJECT_DIR$/WebContent/schedule.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/resources/VisitsDoctorApi.java" afterPath="$PROJECT_DIR$/src/api/resources/VisitsDoctorApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/BloodPressureController.java" afterPath="$PROJECT_DIR$/src/controllers/BloodPressureController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/VisitsDoctorController.java" afterPath="$PROJECT_DIR$/src/controllers/VisitsDoctorController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,33 +41,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserAPI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/api/resources/UserAPI.java">
+      <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/dashboard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="56" column="67" lean-forward="false" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1515167112000" expanded="true" signature="3262:3280" ph="{...}" />
-              </folding>
+            <state relative-caret-position="261">
+              <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/UserController.java">
+      <file leaf-file-name="new_visit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/new_visit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-              <folding>
-                <marker date="1515167112000" expanded="true" signature="460:540" ph="SELECT passw... user" />
-                <marker date="1515167112000" expanded="true" signature="1425:1548" ph="INSERT INTO public.user... " />
-                <marker date="1515167112000" expanded="true" signature="2622:2705" ph="UPDATE publi... " />
-                <marker date="1515167112000" expanded="true" signature="2622:2706" ph="UPDATE publi... " />
-                <marker date="1515167112000" expanded="true" signature="3458:3546" ph="SELECT * FRO... user" />
-                <marker date="1515167112000" expanded="true" signature="4784:4823" ph="SELECT * FRO... user" />
-                <marker date="1515167112000" expanded="true" signature="4784:4835" ph="SELECT * FRO... user" />
-              </folding>
+            <state relative-caret-position="277">
+              <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="102" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedule.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/schedule.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,17 +74,20 @@
       <file leaf-file-name="BloodPressureController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/BloodPressureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="1538">
+              <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1513013712000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
-                <marker date="1513013712000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
-                <marker date="1513013712000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
-                <marker date="1513013712000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
-                <marker date="1513013712000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
-                <marker date="1513013712000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
-                <marker date="1513013712000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+                <marker date="1515692269000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
+                <marker date="1515692269000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
+                <marker date="1515692269000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
+                <marker date="1515692269000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
+                <marker date="1515692269000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
+                <marker date="1515692269000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
+                <marker date="1515692269000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+                <marker date="1515692269000" expanded="true" signature="4225:4349" ph="SELECT systo... bloodpressure" />
+                <marker date="1515692269000" expanded="true" signature="5149:5274" ph="SELECT diast... bloodpressure" />
+                <marker date="1515692269000" expanded="true" signature="6268:6433" ph="SELECT systo... bloodpressure" />
               </folding>
             </state>
           </provider>
@@ -104,6 +111,14 @@
       <find>Date</find>
       <find>Long</find>
       <find>authenticationError</find>
+      <find>getBlo</find>
+      <find>pulse</find>
+      <find>labels</find>
+      <find>chartPreferences</find>
+      <find>bloodPressure</find>
+      <find>total</find>
+      <find>labelInterpolationFnc</find>
+      <find>responsiveOptions</find>
     </findStrings>
     <replaceStrings>
       <replace>bloodPressure</replace>
@@ -131,14 +146,18 @@
         <option value="$PROJECT_DIR$/src/other/BCrypt.java" />
         <option value="$PROJECT_DIR$/src/domain/User.java" />
         <option value="$PROJECT_DIR$/src/domain/BloodPressure.java" />
-        <option value="$PROJECT_DIR$/src/controllers/BloodPressureController.java" />
         <option value="$PROJECT_DIR$/src/domain/UserID.java" />
         <option value="$PROJECT_DIR$/WebContent/login.jsp" />
         <option value="$PROJECT_DIR$/WebContent/create_user.jsp" />
         <option value="$PROJECT_DIR$/WebContent/table.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/dashboard.jsp" />
-        <option value="$PROJECT_DIR$/src/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/api/resources/UserAPI.java" />
+        <option value="$PROJECT_DIR$/src/controllers/VisitsDoctorController.java" />
+        <option value="$PROJECT_DIR$/src/api/resources/VisitsDoctorApi.java" />
+        <option value="$PROJECT_DIR$/src/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/controllers/BloodPressureController.java" />
+        <option value="$PROJECT_DIR$/WebContent/new_visit.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/dashboard.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/schedule.jsp" />
       </list>
     </option>
   </component>
@@ -151,7 +170,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1409" />
-    <option name="height" value="859" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -171,7 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,56 +201,14 @@
             <path>
               <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PredigAppServiceWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PredigAppServiceWeb" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -242,6 +219,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="visi&#9;FILE&#9;file:///Users/Pau/workspace/PredigAppServiceWeb/src/api/resources/VisitsDoctorApi.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -417,6 +395,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="78aca35d-dfef-44f7-9a31-083428fe5c5f" name="Default" comment="" />
@@ -451,7 +432,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39709000" />
+    <option name="totallyTimeSpent" value="45372000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,7 +444,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1409" height="859" extended-state="0" />
+    <frame x="0" y="23" width="1409" height="872" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -477,6 +459,36 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989704" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30501932" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17503217" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2582297" sideWeight="0.48008385" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22238478" sideWeight="0.5199161" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24943988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39921466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -484,20 +496,50 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28795812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17539267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24359912" sideWeight="0.48008385" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22238478" sideWeight="0.5199161" order="2" side_tool="true" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24943988" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39921466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28795812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17539267" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24359912" sideWeight="0.48008385" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22238478" sideWeight="0.5199161" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -507,49 +549,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/controllers/BloodPressureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513013712000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/BloodPressure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/BloodPressure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -563,13 +567,16 @@
           <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513013712000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="4225:4349" ph="SELECT systo... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="5149:5274" ph="SELECT diast... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="6268:6433" ph="SELECT systo... bloodpressure" />
           </folding>
         </state>
       </provider>
@@ -587,13 +594,16 @@
           <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513013712000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="4225:4349" ph="SELECT systo... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="5149:5274" ph="SELECT diast... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="6268:6433" ph="SELECT systo... bloodpressure" />
           </folding>
         </state>
       </provider>
@@ -618,13 +628,16 @@
           <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513013712000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="4225:4349" ph="SELECT systo... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="5149:5274" ph="SELECT diast... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="6268:6433" ph="SELECT systo... bloodpressure" />
           </folding>
         </state>
       </provider>
@@ -649,13 +662,16 @@
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1513013712000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="4225:4349" ph="SELECT systo... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="5149:5274" ph="SELECT diast... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="6268:6433" ph="SELECT systo... bloodpressure" />
           </folding>
         </state>
       </provider>
@@ -779,17 +795,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/RestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,31 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/BloodPressure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/BloodPressureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513013712000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
-            <marker date="1513013712000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
-            <marker date="1513013712000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
-            <marker date="1513013712000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
@@ -852,46 +837,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/resources/UserAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1515432475000" expanded="true" signature="3262:3280" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/resources/BloodPressureAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="45" column="55" lean-forward="false" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/table.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        <state relative-caret-position="143">
+          <caret line="64" column="72" lean-forward="false" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/resources/VisitsDoctorApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/VisitsDoctorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-841">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <marker date="1515687242000" expanded="true" signature="684:718" ph="SELECT * FRO... visits_doctor" />
+            <marker date="1515687242000" expanded="true" signature="684:738" ph="SELECT * FRO... visits_doctors" />
+            <marker date="1515687242000" expanded="true" signature="684:764" ph="SELECT * FRO... visits_doctor" />
+            <marker date="1515687242000" expanded="true" signature="1911:2032" ph="SELECT * FRO... visits_doctor" />
+            <marker date="1515687242000" expanded="true" signature="3113:3204" ph="INSERT INTO public.visits_doctor... " />
+            <marker date="1515687242000" expanded="true" signature="3145:3204" ph="INSERT INTO public.visits_doctors... " />
+            <marker date="1515687242000" expanded="true" signature="3146:3204" ph="INSERT INTO public.visits_doctor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="157" column="48" lean-forward="false" selection-start-line="157" selection-start-column="48" selection-end-line="157" selection-end-column="48" />
+          <folding>
+            <marker date="1515691329000" expanded="true" signature="460:540" ph="SELECT passw... user" />
+            <marker date="1515691329000" expanded="true" signature="1425:1548" ph="INSERT INTO public.user... " />
+            <marker date="1515691329000" expanded="true" signature="2622:2705" ph="UPDATE publi... " />
+            <marker date="1515691329000" expanded="true" signature="2622:2706" ph="UPDATE publi... " />
+            <marker date="1515691329000" expanded="true" signature="3458:3546" ph="SELECT * FRO... user" />
+            <marker date="1515691329000" expanded="true" signature="4784:4823" ph="SELECT * FRO... user" />
+            <marker date="1515691329000" expanded="true" signature="4784:4835" ph="SELECT * FRO... user" />
+            <marker date="1515691329000" expanded="true" signature="6388:6440" ph="SELECT id FR... user" />
+            <marker date="1515691329000" expanded="true" signature="7183:7237" ph="SELECT name user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/BloodPressure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/BloodPressureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1538">
+          <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1515692269000" expanded="true" signature="502:565" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:566" ph="SELECT * FRO... bloodPressure" />
+            <marker date="1515692269000" expanded="true" signature="502:582" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="1706:1827" ph="SELECT * FRO... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="2826:2859" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2925" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="2826:2958" ph="INSERT INTO public.bloodpressure... " />
+            <marker date="1515692269000" expanded="true" signature="4225:4349" ph="SELECT systo... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="5149:5274" ph="SELECT diast... bloodpressure" />
+            <marker date="1515692269000" expanded="true" signature="6268:6433" ph="SELECT systo... bloodpressure" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/new_visit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="102" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/dashboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="68" column="59" lean-forward="false" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+        <state relative-caret-position="261">
+          <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/UserController.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/schedule.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-          <folding>
-            <marker date="1515167112000" expanded="true" signature="460:540" ph="SELECT passw... user" />
-            <marker date="1515167112000" expanded="true" signature="1425:1548" ph="INSERT INTO public.user... " />
-            <marker date="1515167112000" expanded="true" signature="2622:2705" ph="UPDATE publi... " />
-            <marker date="1515167112000" expanded="true" signature="2622:2706" ph="UPDATE publi... " />
-            <marker date="1515167112000" expanded="true" signature="3458:3546" ph="SELECT * FRO... user" />
-            <marker date="1515167112000" expanded="true" signature="4784:4823" ph="SELECT * FRO... user" />
-            <marker date="1515167112000" expanded="true" signature="4784:4835" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/resources/UserAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="56" column="67" lean-forward="false" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1515167112000" expanded="true" signature="3262:3280" ph="{...}" />
-          </folding>
+        <state relative-caret-position="338">
+          <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

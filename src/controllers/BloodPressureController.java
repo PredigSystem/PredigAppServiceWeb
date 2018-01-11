@@ -92,15 +92,15 @@ public final class BloodPressureController {
     }
     
     public static String[] getBloodPressureSystolic(String userId) {
-    	
 		String array[] = new String [10];
+        for(int i = 0; i<10; i++) array[i] = "0";
     		
         try (Connection connection = DBConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement("SELECT systolic FROM public.bloodpressure WHERE bloodpressure.userid = '" + userId + "' order by bloodpressure.date limit 10;")) {
 
             try (ResultSet resultSet = statement.executeQuery()) {
             		int i = 0;
-                while (resultSet.next()) {
+                while (resultSet.next() && i < 10) {
                 		array[i] = String.valueOf(resultSet.getDouble("systolic"));
                 		i++;
                 }
@@ -116,13 +116,14 @@ public final class BloodPressureController {
     
     public static String[] getBloodPressureDiastolic(String userId) {
 		String array[] = new String [10];
+        for(int i = 0; i<10; i++) array[i] = "0";
 
         try (Connection connection = DBConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement("SELECT diastolic FROM public.bloodpressure WHERE bloodpressure.userid = '" + userId + "' order by bloodpressure.date limit 10;")) {
 
             try (ResultSet resultSet = statement.executeQuery()) {
             		int i = 0;
-                while (resultSet.next()) {
+                while (resultSet.next() && i < 10) {
                 		array[i] = String.valueOf(resultSet.getDouble("diastolic"));
                 		i++;
                 }
@@ -136,7 +137,7 @@ public final class BloodPressureController {
         return array;
     }
     
-    public static String[] getBloodPressuePulse(String userId) {
+    public static String[] getBloodPressurePulse(String userId) {
 		String array[] = new String [3];
 		Date aux = new Date();
 		String date = String.valueOf(aux.getDay()) +"/"+ String.valueOf(aux.getMonth()) +"/"+String.valueOf(aux.getYear()-1);
@@ -171,9 +172,15 @@ public final class BloodPressureController {
         
         total = normal + regular + bad;
         
-        array[0] = String.valueOf( (normal * 100) / total );
-        array[1] = String.valueOf( (regular * 100) / total );
-        array[2] = String.valueOf( (bad * 100) / total );
+        if(total < 0){
+            array[0] = String.valueOf( (normal * 100) / total );
+            array[1] = String.valueOf( (regular * 100) / total );
+            array[2] = String.valueOf( (bad * 100) / total );
+        }else{
+            array[0] = "100";
+            array[1] = "0";
+            array[2] = "0";
+        }
 
         return array;
     }
