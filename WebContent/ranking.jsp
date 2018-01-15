@@ -97,7 +97,7 @@
                 <li class="active">
                 		<a href="ranking.jsp?patient=<%= patientNif %>">
                 			<i class="ti-list"></i>
-                			<p>Ranking</p>
+                			<p>Historic list</p>
                 		</a>
                 <li>
 				<li>
