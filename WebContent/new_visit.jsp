@@ -82,6 +82,7 @@
                 PredigSystem
             </div>
 
+
             <ul class="nav">
                 <li>
                     <a href="dashboard.jsp?patient=<%= patientNif %>">
@@ -89,6 +90,12 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
+                <li>
+                		<a href="ranking.jsp?patient=<%= patientNif %>">
+                			<i class="ti-list"></i>
+                			<p>Ranking</p>
+                		</a>
+                <li>
                 <li>
                     <a href="schedule.jsp?patient=<%= patientNif %>">
                         <i class="ti-user"></i>

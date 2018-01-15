@@ -95,6 +95,11 @@
                     </a>
                 </li>
                 <li>
+                		<a href="ranking.jsp?patient=<%= patientNif %>">
+                			<i class="ti-list"></i>
+                			<p>Ranking</p>
+                		</a>
+                <li>
                     <a href="schedule.jsp?patient=<%= patientNif %>">
                         <i class="ti-user"></i>
                         <p>Patient Schedule</p>

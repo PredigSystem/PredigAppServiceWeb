@@ -94,13 +94,13 @@
 						<p>Dashboard</p>
 					</a>
 				</li>
-                <li>
+                <li class="active">
                 		<a href="ranking.jsp?patient=<%= patientNif %>">
                 			<i class="ti-list"></i>
                 			<p>Ranking</p>
                 		</a>
                 <li>
-				<li  class="active">
+				<li>
 					<a href="schedule.jsp?patient=<%= patientNif %>">
 						<i class="ti-user"></i>
 						<p>Patient Schedule</p>
@@ -146,22 +146,22 @@
 							<div class="content table-responsive table-full-width">
 								<table class="table table-hover">
 									<thead>
+									<th>Systolic</th>
+									<th>Diastolic</th>
+									<th>Pulse</th>
 									<th>Date</th>
-									<th>Time</th>
-									<th>Doctor</th>
-									<th>Reason</th>
 									</thead>
 									<tbody>
 									<%
 										SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-										List<VisitsDoctor> visitsDoctorList = VisitsDoctorController.getVisitsDoctorById(patientId);
-										for(VisitsDoctor v : visitsDoctorList){
+										List<BloodPressure> bloodPressureList = BloodPressureController.getBloodPressureByUserId(patientId);
+										for(BloodPressure bP : bloodPressureList){
 									%>
 									<tr>
-										<td><%= dateFormat.format(new java.util.Date(v.getDate())) %></td>
-										<td><%= v.getTime() %></td>
-										<td><%= v.getDoctor() %></td>
-										<td><%= v.getReason() %></td>
+										<td><%= bP.getSystolic() %></td>
+										<td><%= bP.getDiastolic() %></td>
+										<td><%= bP.getPulse() %></td>
+										<td><%= dateFormat.format(new java.util.Date(bP.getDate())) %></td>
 									</tr>
 									<%
 										}
